@@ -8,11 +8,11 @@ interface Props {
 const { title,description,image } = Astro.props;
 
 import Header from "../components/Header.astro";
-import Main from "../components/Main.astro";
+import About from "../components/About.astro";
 import Footer from "../components/Footer.astro";
+
 import '@fontsource/shippori-mincho';
 import { Icon } from 'astro-icon/components';
-
 
 ---
 
@@ -26,8 +26,8 @@ import { Icon } from 'astro-icon/components';
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-		<title>公式PircaMabui</title>
-		<meta name="description" content="北海道-革製品ハンドメイドのオンラインストアです。鞄、財布、キーケース、ミニマムな財布まで、革のパーツごとを素材別で選択ができるため、唯一無二の「とくべつな色」をお届けします。" />
+		<title>こだわり</title>
+		<meta name="description" content="当店のこだわりについて" />
 		<meta name="format-detection" content="telephone=no" />
 
 		<meta name="viewport" content="width=device-width" />
@@ -35,9 +35,10 @@ import { Icon } from 'astro-icon/components';
 
 		<title>{title}</title>
 	</head>
+
 	<body>
 		<Header />
-		<Main />
+		<About />
 
 		<Footer />
 		<slot />
