@@ -14,11 +14,12 @@
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource/shippori-mincho": "^5.0.11",
     "astro": "^4.2.6",
+    "astro-iconify": "^1.2.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "astro-icon": "^1.0.3",
+    "astro-icon": "^1.0.4",
     "wrangler": "^3.25.0"
   }
 }
