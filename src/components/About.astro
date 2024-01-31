@@ -69,7 +69,7 @@
 
 <style>
 
-@media print, screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
                 .about__button[data-astro-cid-j7pv25f6] {
                     margin-top:48px
                 }
@@ -102,18 +102,19 @@
                 transition-duration: .3s
             }
 
+            @media screen and (min-width: 768px) {
+                .button[data-astro-cid-vnzlvqnm] {
+                    padding:10px 24px;
+                    min-width: 240px
+                }
+            }
 
-            @media print, screen and (max-width: 767px) {
+            @media screen and (max-width: 767px) {
                 .button[data-astro-cid-vnzlvqnm] {
                     padding:14px 20px;
                     width: 100%
-                    max-width: 80%;
-
                 }
-
-  }
-  
-          
+            }
 
             @media (hover: hover) {
                 .button[data-astro-cid-vnzlvqnm]:where(:any-link,:enabled,summary):hover {
@@ -203,7 +204,7 @@ img.cover {
 
 @media screen and (min-width: 768px) {
     ._button_1jidj_146 {
-        display:none;
+        display:none
     }
 }
 
@@ -298,6 +299,7 @@ img.cover {
 
 
 
+
 .summary{
     line-height: 2.3;
   letter-spacing: 0.1em;
@@ -339,21 +341,9 @@ img.cover {
 
 
 
-
-.summary-box.column {
-    padding: 1rem 0;
-}
-
-.summary-box.column {
-    margin-bottom: 0;
-    border-bottom: 0;
-    padding: 2.4rem 0 2.2rem;
-}
-
-
 .summary-box.column h1 {
   margin-top: 80px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 2.0;
 
     font-family: 'Shippori Mincho', serif;
@@ -393,7 +383,7 @@ img.cover {
    
    .introduction__heading {
     font-family: 'Shippori Mincho', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
        line-height: 1.7;
        transition: 2s cubic-bezier(.16,1,.3,1);
        font-style: italic;
@@ -458,6 +448,11 @@ img.cover {
    
 
             @media print, screen and (max-width: 767px) {
+
+
+
+
+
     .introduction__map[data-astro-cid-v2cbyr3p]{
     padding-left: 0;
 }
@@ -481,7 +476,7 @@ img.cover {
   .introduction__text {
     margin-top: 1.25rem; /* Add space between image and text */
     text-align: left; /* Center text */
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     padding-top: 30px;
   }
 
