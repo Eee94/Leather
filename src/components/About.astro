@@ -69,7 +69,7 @@
 
 <style>
 
-@media screen and (max-width: 767px) {
+@media print, screen and (max-width: 767px) {
                 .about__button[data-astro-cid-j7pv25f6] {
                     margin-top:48px
                 }
@@ -102,19 +102,18 @@
                 transition-duration: .3s
             }
 
-            @media screen and (min-width: 768px) {
-                .button[data-astro-cid-vnzlvqnm] {
-                    padding:10px 24px;
-                    min-width: 240px
-                }
-            }
 
-            @media screen and (max-width: 767px) {
+            @media print, screen and (max-width: 767px) {
                 .button[data-astro-cid-vnzlvqnm] {
                     padding:14px 20px;
                     width: 100%
+                    max-width: 80%;
+
                 }
-            }
+
+  }
+  
+          
 
             @media (hover: hover) {
                 .button[data-astro-cid-vnzlvqnm]:where(:any-link,:enabled,summary):hover {
@@ -362,10 +361,6 @@ img.cover {
 
 
 
-* {
-    padding: 0;
-    margin: 0;
-}
 
 
 
@@ -456,19 +451,18 @@ img.cover {
        text-rendering: optimizeLegibility;
        height: 100%;
        letter-spacing: .05em;
-       font-size: .8125rem;
        line-height: 1.6923076923;
        color: #333;
 
    }
    
 
+   @media print, screen and (max-width: 767px) {
+    .introduction__map[data-astro-cid-v2cbyr3p]:where(.astro-HR23OLMI){
+    padding-left: 0;
+}
 
-
-
-
-@media (max-width: 768px) {
-  .introduction__container:where(.astro-HR23OLMI) {
+    .introduction__container:where(.astro-HR23OLMI) {
     flex-direction: column; /* Stack elements vertically on smaller screens */
     align-items: center;
   }
@@ -581,19 +575,6 @@ img{
 
 
 
-
-@media (max-width:768px){
-    .introduction__map[data-astro-cid-v2cbyr3p]:where(.astro-HR23OLMI){
-    padding-left: 0;
-}
-
-  }
-  
-  @media (max-width:450px){
-    .introduction__map[data-astro-cid-v2cbyr3p]:where(.astro-HR23OLMI){
-    padding-left: 0;
-}
-}
 
 
 </style>
