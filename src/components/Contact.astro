@@ -34,7 +34,7 @@
     event.preventDefault()
     grecaptcha.ready(() => {
       grecaptcha
-        .execute('6LcuhAMiAAAAACpTUdzNw9J4dzq3s_lIhu_sXlYi', { action: 'submit' })
+        .execute('6LcuhAMiAAAAAAARmCpKoIg_rEO-iK-Uk_coKvXo', { action: 'submit' })
         .then(async (token) => {
           const target = event.target as typeof event.target & {
             name: { value: string }
