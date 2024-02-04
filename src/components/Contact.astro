@@ -1,22 +1,212 @@
 
-<script src="https://www.google.com/recaptcha/api.js"></script><!-- 専用スクリプトの読み込み必要 -->
+
+
 <main class="Layout_Main__dLHqI">
     <div class="Home_Contact__nbvJ6">
     <h1 class="Home_Contact_Title__KdAFZ">お問い合わせ</h1>
-    <p class="Home_Contact_Text__3D7zy">お問い合わせは以下のフォームよりお送りください。<span class="kome">※</span>は必須項目です</p>
+    <p class="Home_Contact_Text__3D7zy">お問い合わせは以下のフォームよりお送りください。</p>
    
-    <form action="https://ssgform.com/s/NHTGZqRshncp" method="post">
-        <div style="display: none;"><input type="text" name="wana" /></div>
-        <label class="Home_Contact_Label__hwNpu" for="name">*氏名</label>
-        <input class="Home_Contact_InputText__vKPd7" id="name" required="required" name="name"  placeholder="本名をご記入ください">
-        <label class="Home_Contact_Label__hwNpu" for="email">*メールアドレス</label>
-        <input class="Home_Contact_InputText__vKPd7" id="email" type="email" required="required" name="email" placeholder="info@example.com">    
-        <label class="Home_Contact_Label__hwNpu" for="message" >*お問い合わせ内容</label>
-        <textarea class="Home_Contact_Textarea__iUa5y" id="message" name="message" rows="5" required="required"> </textarea>
-        <button type="submit" class="Home_Contact_Button__sfQX_">送信する</button>
-     </form></div>
-     </main>
 
+<div>
+    <form action="https://contact-web.form.newt.so/v1/ZS26lqfVZ" method="post">
+      <label class="Home_Contact_Label__hwNpu" for="name">氏名</label>
+      <input  class="Home_Contact_InputText__vKPd7"  required="required" name="name"  placeholder="本名をご記入ください" />
+      <label  class="Home_Contact_Label__hwNpu"  for="email">メールアドレス</label>
+      <input class="Home_Contact_InputText__vKPd7" id="email" type="email" required="required" name="email" placeholder="info@example.com">    
+
+      <label class="Home_Contact_Label__hwNpu"  for="message">お問い合わせ内容</label>
+      <textarea class="Home_Contact_Textarea__iUa5y" id="message" name="message" rows="5" required="required"> </textarea>
+      <button type="submit" class="Home_Contact_Button__sfQX_">送信する</button>
+    </form>
+  </div>
+
+
+
+
+<style>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    .kome{
+        color: #00896C;
+    
+    }
+    
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    
+    
+    
+    
+    .Home_Contact__nbvJ6 {
+        width: 100%;
+        max-width: 700px;
+        padding: 40px 36px;
+        margin-top:50px;
+    }
+    
+    .Home_Contact_Title__KdAFZ {
+        margin: 0 0 4px;
+        padding: 0;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 1.8rem;
+        
+    }
+    
+    
+    .Home_Contact_Label__hwNpu {
+        display: block;
+        font-weight: 700;
+        font-size: 1rem;
+        margin: 0 0 8px
+    }
+    
+    .Home_Contact_InputText__vKPd7 {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 0.9rem;
+        margin: 0 0 24px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .Home_Contact_InputText__vKPd7:hover {
+        border: 1px solid #aaa
+    }
+    
+    .Home_Contact_Textarea__iUa5y {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 0.9rem;
+        margin: 0 0 24px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical
+    }
+    
+    .Home_Contact_Textarea__iUa5y:hover {
+        border: 1px solid #aaa
+    }
+    
+    .Home_Contact_Button__sfQX_ {
+        font-size: 1rem;
+        margin: 0 auto;
+        display: block;
+        padding: 10px 20px;
+        border-radius: 4px;
+        border: none;
+        font-weight: 700;
+        background: #333;
+        color: #fff;
+        transition: background .2s;
+        cursor: pointer
+    }
+    
+    .Home_Contact_Button__sfQX_:hover {
+        background: #000
+    }
+    
+    .Home_Contact_Text__3D7zy {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin: 0 0 48px;
+        padding: 0;
+        color: #666;
+        text-align: center;
+    }
+    
+    .Layout_Main__dLHqI {
+        flex: 1 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    
+    
+    
+    
+    
+    
+    
+    *,:before,:after {
+        box-sizing: border-box;
+        border-style: solid;
+        border-width: 0
+    }
+    
+    html {
+          line-height: 1.15;
+          -webkit-text-size-adjust: 100%;
+          -webkit-tap-highlight-color: transparent
+      }
+      
+      body {
+          margin: 0;
+          color: #333;
+          -moz-osx-font-smoothing: grayscale;
+       -webkit-font-smoothing: antialiased;
+       text-rendering: optimizeLegibility;
+       font-family: 'Shippori Mincho', sans-serif;
+
+      }
+    
+    main {
+        display: block
+    }
+    
+    p,table,blockquote,address,pre,iframe,form,figure,dl {
+        margin: 0
+    }
+    
+    h1,h2,h3,h4,h5,h6 {
+        font-size: inherit;
+        font-weight: inherit;
+        margin: 0
+    }
+    
+    
+    
+    
+    hr {
+        box-sizing: content-box;
+        height: 0;
+        overflow: visible;
+        border-top-width: 1px;
+        margin: 0;
+        clear: both;
+        color: inherit
+    }
+    
+    
+    a {
+        background-color: transparent;
+        text-decoration: none;
+        color: inherit
+    }
+    
+    
+    
+    </style>
+    
 
 
 
