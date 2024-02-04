@@ -8,72 +8,7 @@ import { ViewTransitions } from 'astro:transitions';
 <Layout title="お問い合わせ">
   <main>
      
-    <main class="Layout_Main__dLHqI">
-      <div class="Home_Contact__nbvJ6">
-      <h1 class="Home_Contact_Title__KdAFZ">お問い合わせ</h1>
-      <p class="Home_Contact_Text__3D7zy">お問い合わせは以下のフォームよりお送りください。</p>
-     
-  
-  <div>
-      <form action="https://contact-web.form.newt.so/v1/ZS26lqfVZ" method="post">
-        <label class="Home_Contact_Label__hwNpu" for="name">氏名</label>
-        <input  class="Home_Contact_InputText__vKPd7"  required="required" name="name"  placeholder="本名をご記入ください" />
-        <label  class="Home_Contact_Label__hwNpu"  for="email">メールアドレス</label>
-        <input class="Home_Contact_InputText__vKPd7" id="email" type="email" required="required" name="email" placeholder="info@example.com">    
-  
-        <label class="Home_Contact_Label__hwNpu"  for="message">お問い合わせ内容</label>
-        <textarea class="Home_Contact_Textarea__iUa5y" id="message" name="message" rows="5" required="required"> </textarea>
-        <button type="submit" class="Home_Contact_Button__sfQX_">送信する</button>
-      </form>
-    </div>
   
   </main>
 </Layout>
         
-<script
-  is:inline
-  src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key&hl=ja"
-></script>
-<script>
-  const form = document.getElementById('form')
-  form?.addEventListener('submit', submitFormData)
-
-  function submitFormData(event: Event) {
-    event.preventDefault()
-    grecaptcha.ready(() => {
-      grecaptcha
-        .execute('6LcuhAMiAAAAACpTUdzNw9J4dzq3s_lIhu_sXlYi', { action: 'submit' })
-        .then(async (token) => {
-          const target = event.target as typeof event.target & {
-            name: { value: string }
-            email: { value: string }
-            message: { value: string }
-          }
-
-          const data = {
-            name: target.name.value,
-            email: target.email.value,
-            message: target.message.value,
-            googleReCaptchaToken: token,
-          }
-
-          const formData = new FormData()
-          Object.entries(data).forEach(([key, value]) => {
-            formData.append(key, value)
-          })
-
-          await sendRequest(formData)
-        })
-    })
-  }
-
-  async function sendRequest(formData: FormData) {
-    return await fetch('https://contact-web.form.newt.so/v1/ZS26lqfVZ', {
-      method: 'POST',
-      body: formData,
-      headers: {
-        Accept: 'application/json',
-      },
-    })
-  }
-</script>
