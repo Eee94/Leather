@@ -15,9 +15,9 @@
 
 
 
-    </div>
-    
-    <nav class="sticky" id="stickyNav">
+ </div>
+  
+    <nav class="sticky">
       <div class="nav-content">
         <div class="logo">
           <a href="/"></a>
@@ -30,7 +30,8 @@
         </ul>
       </div>
     </nav>
-
+  
+  
 <section id="down" class="introduction astro-HR23OLMI">
     <div  class="introduction__container astro-HR23OLMI">
       <div class="introduction__content astro-HR23OLMI is-inview" data-scroll="">
@@ -125,9 +126,6 @@
     </ul>
 
 </section>
-
-
-
 
 
 
@@ -1240,6 +1238,8 @@
              line-height: 1.6923076923;
              color: #333;
       
+             margin: 0;
+
          }
          
 
@@ -1257,14 +1257,7 @@
           -webkit-text-size-adjust: 100%;
           -webkit-tap-highlight-color: transparent
       }
-      
-      body {
-          margin: 0;
-          color: #333;
-          -moz-osx-font-smoothing: grayscale;
-       -webkit-font-smoothing: antialiased;
-       text-rendering: optimizeLegibility;
-      }
+   
       
       main {
           display: block
@@ -1314,83 +1307,84 @@ img{
 }
 
 
-
-body {
-      margin: 0;
-      font-family: "Shippori Mincho", sans-serif;
-    }
-
-    nav {
+nav {
       position: -webkit-sticky;
       position: sticky;
       top: 0;
       background-color: rgba(255, 255, 255, 0.8);
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
       width: 100%;
+      z-index: 1000; /* Ensure it's above other elements */
+
+      font-family: "Shippori Mincho",sans-serif;
+
     }
 
+
+
+  
     nav .nav-content {
       max-width: 1200px;
       margin: auto;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 10px;
+      justify-content: flex-end;
+            padding: 10px;
     }
-
+  
     nav .logo a {
       font-weight: 500;
       font-size: 1.05rem;
-      color: #3A3226;
+      color:#3A3226;
+      
       text-decoration: none;
-    }
 
+    }
+  
     .nav-content .nav-links {
       display: flex;
-      gap: 20px;
     }
+  
 
+    
     .nav-content .nav-links li {
       list-style: none;
+      margin: 0 8px;
     }
-
+  
     .nav-links li a {
       text-decoration: none;
-      color: #3A3226;
+      color:#3A3226;
       font-size: 0.95rem;
       font-weight: 500;
       padding: 10px 4px;
       transition: all 0.3s ease;
       line-height: 2.6176470588;
-      letter-spacing: .084em;
+        letter-spacing: .084em;
+        gap:3.125rem;
+        font-family: "Shippori Mincho",sans-serif;
+
     }
 
     .nav-links li a:hover {
       color: #0e2431;
-      border-bottom: 1px solid black;
+      border-bottom:1px solid black;
     }
-
+  
+  
     @media print, screen and (max-width: 767px) {
-      .nav-content {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .nav-links {
-        margin-top: 10px;
-      }
-
       .nav-links li a {
         width: 100%;
         text-align: center;
         font-size: 0.98rem;
-        padding: 5px 0;
+        padding: 0px 0px;
       }
-
-      nav .logo a {
+      nav[data-astro-cid-3ef6ksr2] .logo[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2]{
         font-size: 0.98rem;
       }
     }
+
+
 
      </style> 
 

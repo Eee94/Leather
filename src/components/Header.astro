@@ -1,6 +1,5 @@
 
 
-
 <nav class="sticky">
   <div class="nav-content">
     <div class="logo">
@@ -17,10 +16,12 @@
 
 <style>
 
+
 nav {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 1; /* z-indexで最前面に持ってくる */
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -28,7 +29,6 @@ nav {
     font-family: "Shippori Mincho",sans-serif;
 
   }
-
 
 
 
