@@ -1,95 +1,120 @@
-<nav class="sticky">
-    <div class="nav-content">
-      <div class="logo">
-        <a href="/"></a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="/">ホーム</a></li>
-        <li><a href="/kodawari">こだわり</a></li>
-        <li><a href="/productlist">商品</a></li>
-        <li><a href="#">English</a></li>
-      </ul>
-    </div>
-  </nav>
-  
-  <style>
 
-nav {
+
+<nav class="sticky" id="stickyNav">
+  <div class="nav-content">
+    <div class="logo">
+      <a href="/"></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/">ホーム</a></li>
+      <li><a href="/kodawari">こだわり</a></li>
+      <li><a href="/productlist">商品</a></li>
+      <li><a href="#">English</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+<script>
+  window.onscroll = function() {
+    stickyNav();
+  };
+
+  function stickyNav() {
+    const nav = document.getElementById('stickyNav');
+    const sticky = nav.offsetTop;
+
+    if (window.pageYOffset > sticky) {
+      nav.style.position = 'fixed';
+      nav.style.top = 0;
+      nav.style.width = '100%';
+    } else {
+      nav.style.position = 'static';
+    }
+  }
+</script>
+
+
+<style>
+  body {
+      margin: 0;
+      font-family: "Shippori Mincho", sans-serif;
+    }
+
+    nav {
       position: -webkit-sticky;
       position: sticky;
       top: 0;
       background-color: rgba(255, 255, 255, 0.8);
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
       width: 100%;
- 
-      font-family: "Shippori Mincho",sans-serif;
-
     }
 
-
-
-  
     nav .nav-content {
       max-width: 1200px;
       margin: auto;
       display: flex;
       align-items: center;
-      justify-content: flex-end; 
-       }
-  
+      justify-content: space-between;
+      padding: 10px;
+    }
+
     nav .logo a {
       font-weight: 500;
       font-size: 1.05rem;
-      color:#3A3226;
-      
+      color: #3A3226;
       text-decoration: none;
-
     }
-  
+
     .nav-content .nav-links {
       display: flex;
-      padding-right: 20px;
+      gap: 20px;
     }
-  
 
-    
     .nav-content .nav-links li {
       list-style: none;
-      margin: 0 8px;
     }
-  
+
     .nav-links li a {
       text-decoration: none;
-      color:#3A3226;
+      color: #3A3226;
       font-size: 0.95rem;
       font-weight: 500;
       padding: 10px 4px;
       transition: all 0.3s ease;
       line-height: 2.6176470588;
-        letter-spacing: .084em;
-        gap:3.125rem;
-        font-family: "Shippori Mincho",sans-serif;
-
+      letter-spacing: .084em;
     }
 
     .nav-links li a:hover {
       color: #0e2431;
-      border-bottom:1px solid black;
+      border-bottom: 1px solid black;
     }
-  
-  
+
     @media print, screen and (max-width: 767px) {
+      .nav-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-links {
+        margin-top: 10px;
+      }
+
       .nav-links li a {
         width: 100%;
         text-align: center;
         font-size: 0.98rem;
-        padding: 0px 0px;
+        padding: 5px 0;
       }
-      nav[data-astro-cid-3ef6ksr2] .logo[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2]{
+
+      nav .logo a {
         font-size: 0.98rem;
       }
     }
-
   </style>
   
 
