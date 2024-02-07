@@ -38,15 +38,16 @@ import Back from "../components/Back.astro";
 
 		<meta name="thumbnail" content="/wokrd-min.jpg" />
 	
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-R7FD49YWE3"></script>
-		<script type="text/partytown">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-R7FD49YWE3"></script>
+	<script type="text/partytown">
 	  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-R7FD49YWE3');
+	</script>
 
-  gtag('config', 'G-R7FD49YWE3');
-		</script>
 
 		<title>{title}</title>
 	</head>
