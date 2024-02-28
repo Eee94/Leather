@@ -7,13 +7,13 @@ interface Props {
 
 const { title,description,image } = Astro.props;
 
-import Header from "../components/Header.astro";
 import Web from "../components/Web.astro";
 import Footer from "../components/Footer.astro";
 
 import Back from "../components/Back.astro";
 
 import '@fontsource/shippori-mincho';
+import Header from "../components/Header.astro";
 
 
 ---
@@ -43,11 +43,16 @@ import '@fontsource/shippori-mincho';
 	</head>
 
 	<body>
+        <Header />
 
 		<Web />
+
 		<Back />
 
 		<Footer />
 		<slot />
 	</body>
+
 </html>
+
+
