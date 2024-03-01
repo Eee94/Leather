@@ -34,8 +34,8 @@
     <div class="introduction__container astro-HR23OLMI">
       <div class="introduction__content astro-HR23OLMI is-inview" data-scroll="">
       <h2 class="introduction__heading astro-HR23OLMI"><span class="ttl_line">歴史と伝統が紡ぐ、上質な麻糸</span> </h2>
-      <p class="introduction__text astro-HR23OLMI">①&nbsp;1847年創業のフランスの高級麻糸Fil Au Chinoisはエルメスをはじめ、多くの高級メゾンやこだわりを持つ職人達に愛用されているロウ引き麻糸です。<br class="sp"><br class="sp">19世紀末当時の作り方で熟練の職人の手によって製造されているこの麻糸は、丈夫な天然亜麻から作られています。
-        <br class="sp"><br class="u-pc-only">②&nbsp;SGS国際検査に認証され、かつヨーロッパEN71-3安全基準を満たしており、丈夫で摩擦に強く、滑らかな糸通りと鮮やかな色を保つ高品質の麻糸です。</p></div>
+      <p class="introduction__text astro-HR23OLMI">主に２種類の麻糸を使用しています。<br class="pc"><br class="sp"><br class="sp">①&nbsp;1847年創業のフランスの高級麻糸Fil Au Chinoisはエルメスをはじめ、多くの高級メゾンやこだわりを持つ職人達に愛用されているロウ引き麻糸です。<br class="sp"><br class="sp">19世紀末当時の作り方で熟練の職人の手によって製造されているこの麻糸は、丈夫な天然亜麻から作られています。
+        <br class="sp"><br class="u-pc-only"><br class="pc">②&nbsp;メーカー名&nbsp;:&nbsp;【 Since 】SGS国際検査に認証され、かつヨーロッパEN71-3安全基準を満たしており、丈夫で摩擦に強く、鮮やかな色を保つ高品質の麻糸です。</p></div>
       <figure class="introduction__map astro-HR23OLMI">
       <img src="/fefeknfefee-min.webp" alt="糸の説明" class="astro-HR23OLMI">
               <br><center><span style="color: #999999;">画像引用:https://filauchinois.com/</span>  </center>
@@ -49,7 +49,7 @@
       <div class="introduction__container astro-HR23OLMI">
         <div class="introduction__content astro-HR23OLMI is-inview" data-scroll="">
         <h2 class="introduction__heading astro-HR23OLMI"><span class="ttl_line">400年以上の伝統と音の贅沢</span></h2>
-        <p class="introduction__text astro-HR23OLMI">ドイツの老舗金具メーカー「PRYM（プリム）」同社は他のメーカーとは比べ物にならないほどの長い歴史があり、その歴史は400年以上を誇ります。<br class="sp"><br class="pc"><br class="sp">金具は少し硬めで、「カチッ」とした高い音が開閉時に聞けることでしょう。<br class="sp"><br class="sp">知る人ぞ知るあの「ドイツホック」を製造していたりと、レザーファンにはたまらない金具を提供し続けてくれているメーカーです。</p>
+        <p class="introduction__text astro-HR23OLMI">ドイツの老舗金具メーカー「PRYM（プリム）」同社は他のメーカーとは比べ物にならないほどの長い歴史があり、その歴史は400年以上を誇ります。<br class="sp"><br class="pc"><br class="sp"><br class="pc">金具は少し硬めで、「カチッ」とした高い音が開閉時に聞けることでしょう。<br class="sp"><br class="sp">知る人ぞ知るあの「ドイツホック」を製造していたりと、レザーファンにはたまらない金具を提供し続けてくれているメーカーです。</p>
         </div>
         
         <figure class="introduction__map astro-HR23OLMI">
@@ -65,7 +65,7 @@
         <div class="introduction__container astro-HR23OLMI">
           <div class="introduction__content astro-HR23OLMI is-inview" data-scroll="">
           <h2 class="introduction__heading astro-HR23OLMI"><span class="ttl_line">廃業した老舗の逸品</span></h2>
-          <p class="introduction__text astro-HR23OLMI">1945年創業のスイス発の老舗金具メーカー、アミエット社のキーホルダーを使用しています。<br class="sp">パーツにはSWISS MADEの刻印がなされ、最高品質の素材が使われた、剛健で美しい金具です。<br class="sp"><br class="sp"><br class="pc">※アミエット社は2021年に廃業しており、現在ストックで製作を行っているため、数量限定となっております。
+          <p class="introduction__text astro-HR23OLMI">1945年創業のスイス発の老舗金具メーカー、アミエット社のキーホルダーを使用しています。<br class="sp">パーツにはSWISS MADEの刻印がなされ、最高品質の素材が使われた、剛健で美しい金具です。<br class="sp"><br class="sp"><br class="pc"><br class="pc"><span class="stripe-marker">※アミエット社は2021年に廃業しており、現在ストックで製作を行っているため、数量限定となっております。</span>
           </p>
           </div>
           
@@ -82,11 +82,22 @@
 
 <style>
     
+    .stripe-marker {
+  background-image: repeating-linear-gradient(-45deg,
+    #eee 0, #eee 2px,
+    transparent 2px, transparent 4px
+  );
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 100% 0.5em;
+}
+
 
     .ttl_line {
     border-bottom: 1px solid;
     padding-bottom: 9px;
     line-height: 2;
+    
 }
 
 @media screen and (max-width: 767px) {
@@ -355,7 +366,7 @@ img.cover {
     display: block;
     width: 20px;
     height: 2px;
-    background: black;
+    background: #eee;
     position: absolute;
     bottom: 80;
     left: 0;
