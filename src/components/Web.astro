@@ -58,7 +58,7 @@
                                                                 <h2 class="ti22" >PRICE</h2>
                                                             <div class="plan__detail">
                                                                 <div class="plan__detail__top">
-                                                                  <h4 class="plan__detail__title">A: シンプルながら小規模なサイト</h4>
+                                                                  <h4 class="plan__detail__title">A:小規模なサイト</h4>
                                                                   <div class="plna__detail__hr"></div>
                                                                   <p class="plan__detail__price">¥<span>140,000</span>（税込）</p>
                                                                 </div>
@@ -71,7 +71,7 @@
                                                               
                                                               <div class="plan__detail">
                                                                 <div class="plan__detail__top">
-                                                                  <h4 class="plan__detail__title">B: デザイン、ページ数にこだわりたい</h4>
+                                                                  <h4 class="plan__detail__title">B:中規模なサイト</h4>
                                                                   <div class="plna__detail__hr"></div>
                                                                   <p class="plan__detail__price">¥<span>180,000</span>（税込）</p>
                                                                 </div>
@@ -84,9 +84,9 @@
 
                                                               <div class="plan__detail">
                                                                 <div class="plan__detail__top">
-                                                                  <h4 class="plan__detail__title">C: 最新の技術、超高速、ページ数、デザイン諸々こだわりたい</h4>
+                                                                  <h4 class="plan__detail__title">C: 速度、ページ数、デザイン諸々こだわりたい</h4>
                                                                   <div class="plna__detail__hr"></div>
-                                                                  <p class="plan__detail__price">¥<span>380,000</span>（税込）</p>
+                                                                  <p class="plan__detail__price">¥<span>300,000</span>（税込）</p>
                                                                 </div>
                                                                 <ul class="plan__detail__lists">
                                                                   <li class="plan__detail__list">ページ数&nbsp;&nbsp;&nbsp;1~10&nbsp;&nbsp;<br class="sp">(お問い合わせのページは除く)</li>
@@ -473,10 +473,18 @@ ul, ol {
 
 .plan__detail {
     margin-top: 30px;
-    padding: 30px 50px;
+    padding: 20px 50px;
     background-color: #f8f8f8;
     
 }
+
+@media print, screen and (max-width: 767px) {
+    .plan__detail {
+        padding: 20px 20px;
+
+  }
+}
+
 
 .plan__detail__top {
     display: -webkit-box;
@@ -499,7 +507,6 @@ ul, ol {
 
 .plan__detail {
     margin-top: 30px;
-    padding: 32px 60px;
     background-color:white;
 }
 
