@@ -7,13 +7,13 @@ interface Props {
 
 const { title,description,image } = Astro.props;
 
-import HoneEn from "../components/HomeEn.astro";
-
+import HeaderEn from "../components/HeaderEn.astro";
+import AboutEn from "../components/AboutEn.astro";
 import Footeren from "../components/Footeren.astro";
 
 import '@fontsource/shippori-mincho';
-import Back from "../components/Back.astro";
 
+import Back from "../components/Back.astro";
 
 ---
 
@@ -28,8 +28,8 @@ import Back from "../components/Back.astro";
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		
-		<title>Pirca Mabui</title>
-		<meta name="description" content="We are an online store based in Hokkaido specializing in handmade leather goods. " />
+		<title>ABOUT THE SHOP</title>
+		<meta name="description" content="About Our Shop" />
 		<meta name="format-detection" content="telephone=no" />
 		<meta name="googlebot" content="noindex">
         <meta name="robots" content="noindex,nofollow" />
@@ -42,11 +42,11 @@ import Back from "../components/Back.astro";
 	</head>
 
 	<body>
-		<HoneEn />
-		<Back />
+		<HeaderEn />
+		<AboutEn />
 
+        <Back />
 		<Footeren />
 		<slot />
 	</body>
 </html>
-
