@@ -4,17 +4,19 @@
             <div class="slides">
                 <div id="slides__1" class="slide">
                     <img loading="lazy" src="/patternkey.webp" class="slide__img" alt="パターン">
-                   
+                    <a class="slide__next" title="Next"></a>
                 </div>
                 <div id="slides__2" class="slide">
                     <img loading="lazy" src="/color1.webp" class="slide__img" alt="皮サンプル">
-                 
+                  
                 </div>
                 <div id="slides__3" class="slide">
                     <img loading="lazy" src="/color2.webp" class="slide__img" alt=皮サンプル２"">
                   
                 </div>
                 <div id="slides__4" class="slide">
+                    <img loading="lazy" src="/color2.webp" class="slide__img" alt=皮サンプル２"">
+
                  
                 </div>
             </div>
@@ -229,7 +231,40 @@
         }
       </script>
       
+
       <style>
+
+
+
+
+a.slide__next,
+.slider::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: 5%;
+}
+
+.slider::after,
+.slide__next {
+    position: absolute;
+    top: 48%;
+    width: 20px;
+    height: 20px;
+    border: solid #eee;
+    border-width: 0 4px 4px 0;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+
+.slider::after {
+    content: '';
+    z-index: 1;
+    background: none;
+    pointer-events: none;
+}
+
+
 
         .stripe-marker {
           background-image: repeating-linear-gradient(-45deg,
@@ -419,8 +454,8 @@
         
         .slider__navlink {
             display: inline-block;
-            height: 10px;
-            width: 10px;
+            height: 5px;
+                width: 5px;
             border-radius: 50%;
             background-color: #eee;
             margin: 0 10px;
@@ -460,8 +495,8 @@
         
         @media (max-width: 480px) {
             .slider__navlink {
-                height: 10px;
-                width: 10px;
+                height: 5px;
+                width: 5px;
             }
         
             .slide__text {
