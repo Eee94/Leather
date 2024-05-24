@@ -43,7 +43,7 @@
     <h1 class="Home_Contact_Title__KdAFZ">SELECT</h1>
     <main class="Layout_Main__dLHqI">
         <div class="Home_Contact__nbvJ6">
-            <p class="Home_Contact_Text__3D7zy">パターンオーダーは以下のフォームよりお送りください。<br>送信後、決算ページに移行します。<span class="stripe-marker">カート名：パターンオーダーをご選択します。</span>  <br class="sp"><br class="pc"><span class="kome">※</span>は必須項目です</p>
+            <p class="Home_Contact_Text__3D7zy">パターンオーダーは以下のフォームよりお送りください。<br>送信後、決算ページに移行します。<br class="sp"><span class="stripe-marker">カート名：パターンオーダーをご選択します。</span>  <br class="sp"><br class="pc"><span class="kome">※</span>は必須項目です</p>
             <form method="post" action="https://contact-web.form.newt.so/v1/MOsh6xKM5">
                 <div style="display: none;"><input type="text" name="wana" /></div>
                 <label class="Home_Contact_Label__hwNpu" for="name">*氏名</label>
@@ -230,393 +230,406 @@
         }
       </script>
       
-
-<style>
-
-.stripe-marker {
-  background-image: repeating-linear-gradient(-45deg,
-    #eee 0, #eee 2px,
-    transparent 2px, transparent 4px
-  );
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: 100% 0.5em;
-}
-
-
-html {
-          line-height: 1.15;
-          -webkit-text-size-adjust: 100%;
-          -webkit-tap-highlight-color: transparent
-      }
-      
-      body {
-          margin: 0;
-          color: #333;
-          -moz-osx-font-smoothing: grayscale;
-       -webkit-font-smoothing: antialiased;
-       text-rendering: optimizeLegibility;
-       font-family: 'Shippori Mincho', sans-serif;
-
-      }
-      
-.animate-link {
-  text-decoration: none; /* デフォルトの下線を非表示にする */
-  color: #003EA2; /* 文字色 */
-  background-image: linear-gradient(90deg, #003EA2, #003EA2); /* 線の色 */
-  background-repeat: no-repeat;
-  background-position: left bottom; /* 線の起点を左・下に設定 */
-  background-size: 0 1px; /* 線の横幅を0、縦幅を1pxに */
-  transition: background-size 0.6s; /* 線を伸ばすアニメーション実行時間を指定 */
-}
-
-.animate-link:hover {
-  background-size: 100% 1px; /* 線の横幅を100%にする */
-}
-
-
-
-a {
-    background-color: transparent;
-    text-decoration: none;
-    color: inherit
-}
-
-
-
-
-.bun{
-    line-height: 2;
-    font-size: 0.9575rem;
-    font-family: "Shippori Mincho", sans-serif;
-    margin: 80px auto 0;
-
-}
-
-
-@media print, screen and (max-width: 767px) {
-    .bun {
-    width: auto;
-    margin: 20px 0px 0;
-    font-size: 0.975rem;
-
-  }
-
-  .bun[data-astro-cid-ekziid7k] p[data-astro-cid-ekziid7k]{
-    font-size: 0.975rem;
-    font-family: "Shippori Mincho B1",serif;
-    line-height: 2.3076923077;
-    letter-spacing: .05em;
-
-  }
-
-
-}
-
-
-select{
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 0.9rem;
-    margin: 0 0 24px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-
-h1 {
-        font-size: inherit;
-        font-weight: inherit;
-        margin: 0
-    }
-    
-
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Shippori Mincho', sans-serif;
-
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1200px;
-    margin: 40px auto;
-    margin-top: 100px;
-}
-
-.slider-container {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-.slider {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-}
-
-.slides {
-    display: flex;
-    overflow-x: scroll;
-    position: relative;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch; /* iOSデバイスでの滑らかなスクロール */
-}
-
-.slide:nth-of-type(even) {
-    background-color: rgb(250, 246, 212);
-}
-
-.slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    width: 100%;
-    height: auto;
-    margin-right: 0;
-    box-sizing: border-box;
-    background: white;
-    transform-origin: center center;
-    transform: scale(1);
-    scroll-snap-align: center;
-}
-
-.slide__img {
-    width: 100%;
-    height: auto;
-}
-
-.slide a {
-    background: none;
-    border: none;
-}
-
-
-
-
-
-.slider__nav {
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    width: 200px;
-    margin-left: -100px;
-    text-align: center;
-}
-
-.slider__navlink {
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: #eee;
-    margin: 0 10px;
-}
-
-.description-container {
-    flex: 1;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-@media print, screen and (max-width: 767px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .slider-container {
-        margin-bottom: 20px;
-        width: 100%;
-    }
-
-    .slider {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .slide {
-        height: auto;
-    }
-
-    .description-container {
-        width: 100%;
-        padding: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .slider__navlink {
-        height: 10px;
-        width: 10px;
-    }
-
-    .slide__text {
-        font-size: 30px;
-    }
-}
-
-
-
-
-
-
-
-
-.kome{
-    color: #00896C;
-
-}
-
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-
-
-.Home_Contact__nbvJ6 {
-    width: 100%;
-    max-width: 700px;
-    padding: 40px 36px;
-
-}
-
-
-
-.Home_Contact_Title__KdAFZ  {
-    font-weight: normal;
-
-  letter-spacing: 0.12em;
-    position: relative;
-    line-height: 1.5;
-    margin: 0 0 4px;
-    
-    padding: 0;
-    text-align: center;
- 
-    font-size: 1.8rem;
-    margin-top: 60px;
-    
-}
-
-
-.Home_Contact_Title__KdAFZ:after {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 2px;
-    background: #eee;
-    position: absolute;
-    bottom: 80;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-
-.Home_Contact_Label__hwNpu {
-    display: block;
-    font-weight: 700;
-    font-size: 1rem;
-    margin: 0 0 8px
-}
-
-.Home_Contact_InputText__vKPd7 {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 0.9rem;
-    margin: 0 0 24px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.Home_Contact_InputText__vKPd7:hover {
-    border: 1px solid #aaa
-}
-
-.Home_Contact_Textarea__iUa5y {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 0.9rem;
-    margin: 0 0 24px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical
-}
-
-.Home_Contact_Textarea__iUa5y:hover {
-    border: 1px solid #aaa
-}
-
-.Home_Contact_Button__sfQX_ {
-    font-size: 1rem;
-    margin: 0 auto;
-    display: block;
-    padding: 10px 20px;
-    border-radius: 4px;
-    border: none;
-    font-weight: 700;
-    background: #333;
-    color: #fff;
-    transition: background .2s;
-    cursor: pointer;
-}
-
-.Home_Contact_Button__sfQX_:hover {
-    background: #000;
-}
-
-.Home_Contact_Text__3D7zy {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin: 0 0 48px;
-    padding: 0;
-    color: #666;
-    text-align: center;
-}
-
-.Layout_Main__dLHqI {
-    flex: 1 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    font-size: 1.1rem;
-}
-
-
-.sp {
-    display: none !important;
-}
-
-@media screen and (max-width:767px) {
-    .pc {
-        display: none !important;
-    }
-    .sp {
-        display: block !important;
-    }
-}
-
-</style>
+      <style>
+
+        .stripe-marker {
+          background-image: repeating-linear-gradient(-45deg,
+            #eee 0, #eee 2px,
+            transparent 2px, transparent 4px
+          );
+          background-repeat: no-repeat;
+          background-position: left bottom;
+          background-size: 100% 0.5em;
+        }
+        
+        
+        html {
+                  line-height: 1.15;
+                  -webkit-text-size-adjust: 100%;
+                  -webkit-tap-highlight-color: transparent
+              }
+              
+              body {
+                  margin: 0;
+                  color: #333;
+                  -moz-osx-font-smoothing: grayscale;
+               -webkit-font-smoothing: antialiased;
+               text-rendering: optimizeLegibility;
+               font-family: 'Shippori Mincho', sans-serif;
+        
+              }
+              
+        .animate-link {
+          text-decoration: none; /* デフォルトの下線を非表示にする */
+          color: #003EA2; /* 文字色 */
+          background-image: linear-gradient(90deg, #003EA2, #003EA2); /* 線の色 */
+          background-repeat: no-repeat;
+          background-position: left bottom; /* 線の起点を左・下に設定 */
+          background-size: 0 1px; /* 線の横幅を0、縦幅を1pxに */
+          transition: background-size 0.6s; /* 線を伸ばすアニメーション実行時間を指定 */
+        }
+        
+        .animate-link:hover {
+          background-size: 100% 1px; /* 線の横幅を100%にする */
+        }
+        
+        
+        
+        a {
+            background-color: transparent;
+            text-decoration: none;
+            color: inherit
+        }
+        
+        
+        
+        
+        .bun{
+            line-height: 2;
+            font-size: 0.9575rem;
+            font-family: "Shippori Mincho", sans-serif;
+            margin: 80px auto 0;
+        
+        }
+        
+        
+        @media print, screen and (max-width: 767px) {
+            .bun {
+            width: auto;
+            margin: 20px 0px 0;
+            font-size: 0.975rem;
+        
+          }
+        
+          .bun[data-astro-cid-ekziid7k] p[data-astro-cid-ekziid7k]{
+            font-size: 0.975rem;
+            font-family: "Shippori Mincho B1",serif;
+            line-height: 2.3076923077;
+            letter-spacing: .05em;
+        
+          }
+        
+        
+        }
+        
+        
+        select{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 0.9rem;
+            margin: 0 0 24px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        
+        h1 {
+                font-size: inherit;
+                font-weight: inherit;
+                margin: 0
+            }
+            
+        
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Shippori Mincho', sans-serif;
+        
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 1200px;
+            margin: 40px auto;
+            margin-top: 100px;
+        }
+        
+        .slider-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .slider {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .slides {
+            display: flex;
+            overflow-x: scroll;
+            position: relative;
+            scroll-behavior: smooth;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch; /* iOSデバイスでの滑らかなスクロール */
+        }
+        
+        .slide:nth-of-type(even) {
+            background-color: rgb(250, 246, 212);
+        }
+        
+        .slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            width: 100%;
+            height: auto;
+            margin-right: 0;
+            box-sizing: border-box;
+            background: white;
+            transform-origin: center center;
+            transform: scale(1);
+            scroll-snap-align: center;
+        }
+        
+        .slide__img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .slide a {
+            background: none;
+            border: none;
+        }
+        
+        
+        
+        
+        
+        .slider__nav {
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            width: 200px;
+            margin-left: -100px;
+            text-align: center;
+        }
+        
+        .slider__navlink {
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background-color: #eee;
+            margin: 0 10px;
+        }
+        
+        .description-container {
+            flex: 1;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        @media print, screen and (max-width: 767px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .slider-container {
+                margin-bottom: 20px;
+                width: 100%;
+            }
+        
+            .slider {
+                max-width: 100%;
+                height: auto;
+            }
+        
+            .slide {
+                height: auto;
+            }
+        
+            .description-container {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .slider__navlink {
+                height: 10px;
+                width: 10px;
+            }
+        
+            .slide__text {
+                font-size: 30px;
+            }
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        .kome{
+            color: #00896C;
+        
+        }
+        
+        
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        
+        
+        .Home_Contact__nbvJ6 {
+            width: 100%;
+            max-width: 700px;
+            padding: 40px 36px;
+        
+        }
+        
+        
+        
+        .Home_Contact_Title__KdAFZ  {
+            font-weight: normal;
+        
+          letter-spacing: 0.12em;
+            position: relative;
+            line-height: 1.5;
+            margin: 0 0 4px;
+            
+            padding: 0;
+            text-align: center;
+         
+            font-size: 1.8rem;
+            margin-top: 60px;
+            
+        }
+        
+        
+        .Home_Contact_Title__KdAFZ:after {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: #eee;
+            position: absolute;
+            bottom: 80;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        
+        
+        .Home_Contact_Label__hwNpu {
+            display: block;
+            font-weight: 700;
+            font-size: 1rem;
+            margin: 0 0 8px
+        }
+        
+        .Home_Contact_InputText__vKPd7 {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 0.9rem;
+            margin: 0 0 24px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        .Home_Contact_InputText__vKPd7:hover {
+            border: 1px solid #aaa
+        }
+        
+        .Home_Contact_Textarea__iUa5y {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 0.9rem;
+            margin: 0 0 24px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical
+        
+        
+            
+        }
+        
+        
+        
+        
+        .Home_Contact_Textarea__iUa5y:hover {
+            border: 1px solid #aaa
+        }
+        
+        .Home_Contact_Button__sfQX_ {
+            font-size: 1rem;
+            margin: 0 auto;
+            display: block;
+            padding: 10px 20px;
+            border-radius: 4px;
+            border: none;
+            font-weight: 700;
+            background: #333;
+            color: #fff;
+            transition: background .2s;
+            cursor: pointer;
+        }
+        
+        .Home_Contact_Button__sfQX_:hover {
+            background: #000;
+        }
+        
+        .Home_Contact_Text__3D7zy {
+            font-size: 0.9575rem;   
+             line-height: 1.5;
+             font-family: "Shippori Mincho", sans-serif;
+             margin: 0 0 48px;
+            padding: 0;
+          text-align: center;
+        
+        }
+        
+        
+        
+        
+        
+        
+        
+        .Layout_Main__dLHqI {
+            flex: 1 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            font-size: 1.1rem;
+        }
+        
+        
+        .sp {
+            display: none !important;
+        }
+        
+        @media screen and (max-width:767px) {
+            .pc {
+                display: none !important;
+            }
+            .sp {
+                display: block !important;
+            }
+        }
+        
+        </style>
+        
