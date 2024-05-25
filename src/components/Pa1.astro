@@ -377,11 +377,22 @@ a.slide__next,
         .container {
             display: flex;
             flex-wrap: wrap;
-            width: 100%;
+            width: 80%;
             max-width: 1200px;
             margin: 40px auto;
             margin-top: 100px;
         }
+
+
+        @media print, screen and (max-width: 767px) {
+            .container {
+                width: 100%;
+
+            }
+
+        }
+
+
         
         .slider-container {
             flex: 1;
