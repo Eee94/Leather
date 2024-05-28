@@ -396,6 +396,7 @@ a.slide__next,
         body {
             margin: 0;
             padding: 0;
+            
             box-sizing: border-box;
             font-family: 'Shippori Mincho', sans-serif;
         
@@ -413,7 +414,7 @@ a.slide__next,
 
         @media print, screen and (max-width: 767px) {
             .container {
-                width: 100%;
+                width: 80%;
 
             }
 
@@ -559,7 +560,13 @@ a.slide__next,
             padding: 0;
             margin: 0;
         }
-        
+
+
+*,:before,:after {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0
+}
         
         
         .Home_Contact__nbvJ6 {
