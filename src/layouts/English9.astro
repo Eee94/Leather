@@ -1,0 +1,55 @@
+---
+interface Props {
+	title: string;
+	description?: string;
+	image?: string
+}
+
+const { title,description,image } = Astro.props;
+
+import HeaderEn from "../components/HeaderEn.astro";
+
+import KeyhookEn from "../components/KeyhookEn.astro";
+
+import Footeren from "../components/Footeren.astro";
+
+import Back from "../components/Back.astro";
+
+import '@fontsource-variable/open-sans';
+
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+
+		<meta name="astro-view-transitions-fallback" content="animate">
+	
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		
+		<title>Keycase type Hook</title>
+		<meta name="description" content="" />
+		<meta name="format-detection" content="telephone=no" />
+        <meta name="googlebot" content="noindex">
+        <meta name="robots" content="noindex,nofollow" />
+
+		<link rel="icon" href="/king.png">
+		<link rel="apple-touch-icon" href="/king.png" sizes="180x180">
+	
+
+		<title>{title}</title>
+	</head>
+
+	<body>
+
+        <HeaderEn />
+        <KeyhookEn />
+		<Back />
+		<Footeren />
+		<slot />
+	</body>
+</html>
