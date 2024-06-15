@@ -8,28 +8,35 @@
 
                 
                 <div id="slides__1" class="slide">
-                    
                     <img loading="lazy" src="/keypattern.webp" class="slide__img" alt="パターン">
+            
                 </div>
                 <div id="slides__2" class="slide">
                     <img loading="lazy" src="/keycasrre.webp" class="slide__img" alt="皮サンプル">
-                 
+                    
                 </div>
+
                 <div id="slides__3" class="slide">
-                    <img loading="lazy" src="/color1.webp" class="slide__img" alt=皮サンプル２"">
-                  
+                    <img loading="lazy" src="/color1.webp" class="slide__img" alt="皮サンプル">
+                 
                 </div>
                 <div id="slides__4" class="slide">
                     <img loading="lazy" src="/color2.webp" class="slide__img" alt=皮サンプル２"">
-
+                  
                 </div>
+
                 <div id="slides__5" class="slide">
-                    <img loading="lazy" src="/fasner-min.webp" class="slide__img" alt=皮サンプル２"">
+                    <img loading="lazy" src="/thred.webp" class="slide__img" alt="糸">
 
                 </div>
 
                 <div id="slides__6" class="slide">
-                    <img loading="lazy" src="/fasnerre.webp" class="slide__img" alt=皮サンプル２"">
+                    <img loading="lazy" src="/kokuinn.webp" class="slide__img" alt="刻印">
+
+                </div>
+
+                <div id="slides__7" class="slide">
+                    <img loading="lazy" src="/stamp.webp" class="slide__img" alt="刻印">
 
                 </div>
             </div>
@@ -131,8 +138,15 @@
                     <option value="ピンク">ピンク</option>
                 </select>
 
+                <label class="Home_Contact_Label__hwNpu" for="hook">*ホック</label>
+                <select name="hook" class="form-control" required="required">
+                    <option value="" disabled selected>選択してください</option>
+                    <option value="ゴールド">ゴールド</option>
+                    <option value="シルバー">シルバー</option>                    
+                </select>
+
            
-                <label class="Home_Contact_Label__hwNpu" for="kanagu">*金具（キーフック）</label>
+                <label class="Home_Contact_Label__hwNpu" for="kanagu">*キーフック</label>
                 <select name="kanagu" class="form-control" required="required">
                     <option value="" disabled selected>選択してください</option>
                     <option value="ゴールド">ゴールド</option>
@@ -171,14 +185,12 @@
                 <select name="kokuin" class="form-control" >
                     <option value="" disabled selected>選択してください</option>
                     <option value="有り">有り（配置 中央ポケット）</option>
-                    <option value="有り">有り（配置 右ポケット）</option>
-                    <option value="有り">有り（配置 左ポケット）</option>
                     <option value="無し">無し</option>
                 
                 </select>
 
-                <label class="Home_Contact_Label__hwNpu"  for="message">イニシャル刻印</label>
-                <textarea class="Home_Contact_Textarea__iUa5y" id="message" name="message" rows="5"  placeholder="12文字までをご記入ください、配置:中央ポケット"></textarea>
+                <label class="Home_Contact_Label__hwNpu"  for="message">イニシャル刻印(&thinsp;希望の方 配置:中央ポケット&thinsp;)</label>
+                <textarea class="Home_Contact_Textarea__iUa5y" id="message" name="message" rows="5"  placeholder="12文字までをご記入ください.大小文字含むA~Z、数字2桁まで(０〜９、同数字不可:例22)、 記号【.＆】のみ"></textarea>
 
                 <button type="submit" class="Home_Contact_Button__sfQX_">送信する</button>
             </form>
