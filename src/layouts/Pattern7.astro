@@ -9,9 +9,9 @@ const { title,description,image } = Astro.props;
 
 import Header from "../components/Header.astro";
 
-import Productlist from "../components/Productlist.astro";
-import Back from "../components/Back.astro";
+import Pa7 from "../components/Pa7.astro";
 
+import Back from "../components/Back.astro";
 import Footer from "../components/Footer.astro";
 
 
@@ -31,20 +31,14 @@ import '@fontsource/shippori-mincho';
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		
-		<title>商品リスト</title>
-		<meta name="description" content="商品リストについて" />
+		<title>セミオーダー ミニマムウォレット</title>
+		<meta name="description" content="セミオーダー ミニマムウォレットについて" />
 		<meta name="format-detection" content="telephone=no" />
         <meta name="googlebot" content="noindex">
         <meta name="robots" content="noindex,nofollow" />
 
 		<link rel="icon" href="/king.png">
 		<link rel="apple-touch-icon" href="/king.png" sizes="180x180">
-
-		<meta property="og:url" content="https://pircamabui.com/productlist/">
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="商品リスト">
-		<meta property="og:description" content="当店の作品を紹介しています。">
-		<meta property="og:image" content="/colee.webp">
 	
 
 		<title>{title}</title>
@@ -54,9 +48,9 @@ import '@fontsource/shippori-mincho';
 
         <Header />
 
-        <Productlist />
-		<Back />
+        <Pa7 />		
 
+		<Back />
 		<Footer />
 		<slot />
 	</body>
